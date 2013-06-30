@@ -1,27 +1,26 @@
 <!DOCTYPE HTML>
 <html>
 <header id="cabecera">
-     <link rel="stylesheet" href="style.css" type="text/css" />
+     <script type="text/javascript" src="cargarpagina.js"></script>
+     <script type="text/javascript" src="veropciones.js"></script>
      <h1> Panel de Administracion BBDD </h1>
 </header>
+<body onload="javascript:cargarExterno('home.html','contenido');">
 <nav align=left>
 <ul>
   <li>Gestion Encuestas</li>
      <ul>
-     <li><a href="/anadir_encuesta.php" target="centro"> Añadir Encuesta</a></li>
-     <li><a href="/borrarencuesta.php" target="centro">Eliminar Encuesta</a></li>
-     <li><a href="/mostrarencuestas.php" target="centro">Mostrar Encuesta</a></li>
-     <li><a href="/vervotaciones.php" target="centro">ver las votaciones</a></li>
+     <li><a href="javascript:cargarExterno('anadir_encuesta.php','contenido');"> Añadir Encuesta</a></li>
+     <li><a href="javascript:cargarExterno('borrarencuesta.php','contenido');">Eliminar Encuesta</a></li>
+     <li><a href="javascript:cargarExterno('mostrarencuestas.php','contenido');">Mostrar Encuesta</a></li>
+     <li><a href="javascript:cargarExterno('vervotaciones.php','contenido');">ver las votaciones</a></li>
     </ul>
 </nav>
-<section>
-   <iframe name="centro" width="500" height="500" frameborder=0 sandbox="" scrolling="no" border="2px" > 
+<div id="contenido"></div>
 
-     </iframe>
-</section>
+</body>
 <footer>
 </footer>
 </html>
-
   
 
