@@ -27,7 +27,8 @@ if(isset($_POST['enviar'])){
 <?php 
             } 
 ?> 
-                    <div style="text-align: center; font-size: 11px;">Votos totales: <strong><?=$tot?></strong></div> 
+                    <div style="text-align: center; font-size: 11px;">Votos totales: <strong><?=$tot?></strong></div>
+                    <p><a class='link' href='principal.html'>Regresar</a></p> 
 
 <?php
      }}} else {
