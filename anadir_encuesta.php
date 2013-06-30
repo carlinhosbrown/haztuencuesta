@@ -31,51 +31,7 @@ span a {
     margin-left: 1em; 
 } 
 </style> 
-<!-- Este javascirpt nos permitirá tener la opción de agregar las opciones que deseemos agregar a cada encuesta --> 
-<script type="text/javascript"> 
-    var numero = 0; 
-     
-    // Funciones comunes 
-    c = function (tag) { // Crea un elemento 
-        return document.createElement(tag); 
-    } 
-    d = function (id) { // Retorna un elemento en base al id 
-        return document.getElementById(id); 
-    } 
-    e = function (evt) { // Retorna el evento 
-        return (!evt) ? event : evt; 
-    } 
-    f = function (evt) { // Retorna el objeto que genera el evento 
-        return evt.srcElement ?  evt.srcElement : evt.target; 
-    } 
-     
-    addField = function () { 
-        container = d('files'); 
-         
-        span = c('SPAN'); 
-        span.className = 'file'; 
-        span.id = 'file' + (++numero); 
-         
-        field = c('INPUT'); 
-        field.name = 'respuesta[]'; 
-        field.type = 'text'; 
-         
-        a = c('A'); 
-        a.name = span.id; 
-        a.href = '#'; 
-        a.onclick = removeField; 
-        a.innerHTML = 'Quitar'; 
-         
-        span.appendChild(field); 
-        span.appendChild(a); 
-        container.appendChild(span); 
-    } 
-    removeField = function (evt) { 
-        lnk = f(e(evt)); 
-        span = d(lnk.name); 
-        span.parentNode.removeChild(span); 
-    } 
-</script> 
+<script type="text/javascript" src="veropciones.js"> </script> 
 </head> 
 <body> 
 <?php 
